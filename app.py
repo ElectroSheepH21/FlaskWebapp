@@ -7,13 +7,16 @@ app = Flask(__name__)
 def root():
     return redirect(url_for("home"))
 
+
 @app.route("/home")
 def home():
     return render_template("base_home.html")
 
+
 @app.route("/child0")
 def child0():
     return render_template("base_child0.html")
+
 
 @app.route("/child1")
 def child1():
